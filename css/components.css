@@ -1,0 +1,80 @@
+.hero-visual,
+.about-visual,
+.project-featured-visual,
+.project-card-image,
+.github-card,
+.cert-card,
+.contact-card {
+    overflow: hidden;
+}
+
+.scale-on-hover {
+    transition: transform 0.3s ease;
+}
+
+.scale-on-hover:hover {
+    transform: translateY(-5px);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.section .container {
+    position: relative;
+}
+
+.hero-socials a,
+.btn,
+.theme-toggle,
+.nav-toggle,
+.project-card-overlay a {
+    transition: all 0.2s ease;
+}
+
+.project-card-overlay a:hover,
+.github-card:hover,
+.cert-card:hover,
+.contact-card:hover,
+.project-card:hover,
+.btn:hover,
+.theme-toggle:hover,
+.nav-toggle:hover {
+    transform: translateY(-2px);
+}
+
+.project-featured-content h3,
+.github-card h3,
+.cert-card h3,
+.contact-card h3 {
+    color: #fff;
+}
+
+.project-card-body ul,
+.timeline-tags,
+.github-card .card-meta,
+.contact-list {
+    margin: 0;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-container {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1199px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-grid,
+    .project-featured,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

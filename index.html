@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunani Ken Chauke | Software Developer &amp; IT Professional</title>
+    <meta name="description" content="Portfolio of Dunani Ken Chauke - Software Developer, Mobile App Developer and IT Professional. Building scalable web, mobile and enterprise IT solutions.">
+    <meta name="keywords" content="Dunani Ken Chauke, Software Developer, Web Developer, Mobile App Developer, React Native, Flask, IT Professional, South Africa">
+    <meta name="author" content="Dunani Ken Chauke">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dunani Ken Chauke | Software Developer & IT Professional">
+    <meta property="og:description" content="Software Developer, Mobile App Developer and IT Professional building scalable web, mobile and enterprise IT solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dunani Ken Chauke",
+        "jobTitle": "Software Developer",
+        "description": "Software Developer, Mobile App Developer and IT Professional specialising in web, mobile and enterprise IT solutions.",
+        "url": "https://your-domain-here.com",
+        "sameAs": [
+            "https://github.com/your-github-username",
+            "https://linkedin.com/in/your-linkedin-username"
+        ],
+        "knowsAbout": ["Software Development", "React.js", "React Native", "Flask", "Python", "Enterprise IT", "Networking", "Cloud Computing"]
+    }
+    </script>
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-logo">DKC</div>
+        <div class="preloader-bar"><span></span></div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Dunani Ken Chauke Home">
+                <span class="logo-mark">DKC</span>
+                <span class="logo-text">Dunani Ken Chauke</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#learning" class="nav-link">Learning</a></li>
+                <li><a href="#github" class="nav-link">GitHub</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <a href="assets/cv/Dunani-Ken-Chauke-CV.pdf" download class="btn btn-sm btn-primary nav-cta">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting" data-aos="fade-up">
+                    <span class="wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Dunani Ken <span class="text-gradient">Chauke</span>
+                </h1>
+                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="150">
+                    <span id="typewriter" class="typewriter"></span><span class="typewriter-cursor">|</span>
+                </h2>
+                <p class="hero-intro" data-aos="fade-up" data-aos-delay="200">
+                    Passionate technology graduate with experience building enterprise systems, modern web
+                    applications, mobile applications, and network automation solutions. Focused on creating
+                    scalable, user-friendly digital experiences while continuously learning emerging technologies.
+                </p>
+
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="250">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-diagram-project"></i> View Projects
+                    </a>
+                    <a href="assets/cv/Dunani-Ken-Chauke-CV.pdf" download class="btn btn-secondary">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fa-solid fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-socials" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://github.com/your-github-username" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:dunani.chauke@example.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+                <div class="hero-image-frame">
+                    <div class="frame-glow"></div>
+                    <img src="assets/images/profile picture.jpeg" alt="Dunani Ken Chauke - Software Developer" class="hero-image">
+                    <span class="floating-badge badge-1"><i class="fa-brands fa-react"></i></span>
+                    <span class="floating-badge badge-2"><i class="fa-brands fa-python"></i></span>
+                    <span class="floating-badge badge-3"><i class="fa-solid fa-database"></i></span>
+                    <span class="floating-badge badge-4"><i class="fa-brands fa-js"></i></span>
+                    <span class="status-chip"><span class="status-dot"></span> Open to Opportunities</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-stats" data-aos="fade-up">
+            <div class="stat-item">
+                <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="9">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">In Active Learning</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+                <span class="stat-label">Commitment</span>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span>Scroll</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+                <h2>From Electrical Engineering to <span class="text-gradient">Software Innovation</span></h2>
+                <p class="section-subtitle">A journey rooted in enterprise IT, driven by a passion for building software.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-visual" data-aos="fade-right">
+                    <div class="about-image-wrap">
+                        <img src="assets/images/about-placeholder.svg" alt="Dunani Ken Chauke working" class="about-image">
+                        <div class="about-card-float">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <strong>National Diploma</strong>
+                                <span>Electrical Engineering (Computer Systems)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content" data-aos="fade-left">
+                    <p>
+                        I hold a <strong>National Diploma in Electrical Engineering (Computer Systems)</strong> from the
+                        <strong>Vaal University of Technology</strong>, where I built a strong foundation in systems
+                        thinking, digital logic, and computer networking &mdash; the same principles I now apply to
+                        writing clean, scalable software.
+                    </p>
+                    <p>
+                        My career began in <strong>enterprise IT environments</strong>, supporting real users, servers,
+                        and network infrastructure at scale. That hands-on experience with Active Directory,
+                        Microsoft 365, and enterprise networking gave me a rare perspective: I don't just write code,
+                        I understand the infrastructure that code runs on.
+                    </p>
+                    <p>
+                        Today, my passion has evolved into <strong>full-stack software development</strong> &mdash;
+                        building web applications with React and Flask, cross-platform mobile apps with React Native,
+                        and automating enterprise IT workflows through custom-built tools like my DHCP IP Address
+                        Management System.
+                    </p>
+                    <p>
+                        I'm deeply curious about <strong>Artificial Intelligence and emerging technologies</strong>,
+                        and I dedicate consistent time every week to continuous learning &mdash; because in
+                        technology, the moment you stop learning is the moment you fall behind.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-server"></i>
+                            <span>Enterprise IT Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Full-Stack Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span>Mobile App Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>AI &amp; Emerging Tech Enthusiast</span>
+                        </div>
+                    </div>
+
+                    <a href="assets/cv/Dunani-Ken-Chauke-CV.pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> Download Full CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Technical Skills</span>
+                <h2>My <span class="text-gradient">Technology Stack</span></h2>
+                <p class="section-subtitle">A well-rounded skillset spanning web, mobile, backend and enterprise IT.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill-cat-header"><i class="fa-solid fa-display"></i><h3>Frontend</h3></div>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+                        <li><i class="fa-brands fa-react"></i> React.js</li>
+                        <li><i class="fa-solid fa-mobile-screen-button"></i> Responsive Design</li>
+                        <li><i class="fa-solid fa-wind"></i> Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-cat-header"><i class="fa-solid fa-server"></i><h3>Backend</h3></div>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-solid fa-flask"></i> Flask</li>
+                        <li><i class="fa-solid fa-network-wired"></i> REST APIs</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-cat-header"><i class="fa-solid fa-mobile-screen"></i><h3>Mobile Development</h3></div>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-react"></i> React Native</li>
+                        <li><i class="fa-solid fa-arrows-turn-to-dots"></i> Cross-platform Development</li>
+                        <li><i class="fa-solid fa-mobile"></i> Expo</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-cat-header"><i class="fa-solid fa-database"></i><h3>Database</h3></div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-database"></i> MySQL</li>
+                        <li><i class="fa-solid fa-table"></i> SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-cat-header"><i class="fa-solid fa-building"></i><h3>Enterprise Technologies</h3></div>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-users-gear"></i> Active Directory</li>
+                        <li><i class="fa-solid fa-cloud"></i> Microsoft 365</li>
+                        <li><i class="fa-brands fa-microsoft"></i> Azure</li>
+                        <li><i class="fa-solid fa-network-wired"></i> Networking</li>
+                        <li><i class="fa-solid fa-diagram-project"></i> DHCP</li>
+                        <li><i class="fa-brands fa-windows"></i> Windows Server</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-cat-header"><i class="fa-solid fa-toolbox"></i><h3>Tools</h3></div>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                        <li><i class="fa-brands fa-github"></i> GitHub</li>
+                        <li><i class="fa-solid fa-code"></i> VS Code</li>
+                        <li><i class="fa-solid fa-paper-plane"></i> Postman</li>
+                        <li><i class="fa-brands fa-android"></i> Android Studio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Featured Projects</span>
+                <h2>Things I've <span class="text-gradient">Built</span></h2>
+                <p class="section-subtitle">Real-world software solving real enterprise and business problems.</p>
+            </div>
+
+            <!-- Project 1: Featured / Large -->
+            <div class="project-featured" data-aos="fade-up">
+                <div class="project-featured-visual">
+                    <img src="assets/images/projects/dhcp-dashboard.svg" alt="Enterprise DHCP IP Address Management System dashboard screenshot">
+                    <div class="project-tag-float">Flagship Project</div>
+                </div>
+                <div class="project-featured-content">
+                    <span class="project-number">01</span>
+                    <h3>Enterprise DHCP IP Address Management System</h3>
+                    <p>
+                        Designed and developed an automated DHCP IP Address Management System for enterprise
+                        environments, giving network administrators real-time visibility and control over
+                        IP allocation across the organisation.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fa-solid fa-check"></i> Real-time IP lease monitoring</li>
+                        <li><i class="fa-solid fa-check"></i> Network health dashboard</li>
+                        <li><i class="fa-solid fa-check"></i> IP allocation tracking</li>
+                        <li><i class="fa-solid fa-check"></i> Reservation management</li>
+                        <li><i class="fa-solid fa-check"></i> Administrative reporting</li>
+                        <li><i class="fa-solid fa-check"></i> REST API integration</li>
+                        <li><i class="fa-solid fa-check"></i> Enterprise network visibility</li>
+                    </ul>
+
+                    <div class="project-achievements">
+                        <h4><i class="fa-solid fa-trophy"></i> Key Achievements</h4>
+                        <p>Reduced manual IP conflict investigation time by automating lease tracking and building
+                        a live network health dashboard that surfaces anomalies to administrators in real time.</p>
+                        <h4><i class="fa-solid fa-wrench"></i> Technical Challenges Solved</h4>
+                        <p>Implemented WebSocket-based live updates to synchronise dashboard state across multiple
+                        admin sessions without polling, and designed a normalised MySQL schema to reliably track
+                        lease history and reservation conflicts at scale.</p>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">REST APIs</span>
+                        <span class="tech-badge">WebSockets</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-diagram-project"></i> Architecture</a>
+                        <a href="#" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+                        <a href="#" class="btn btn-ghost btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects 2-4: Grid -->
+            <div class="projects-grid">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project-card-image">
+                        <img src="assets/images/projects/healthcare-app.svg" alt="Cross-Platform Healthcare Application screenshot">
+                        <div class="project-card-overlay">
+                            <a href="#" aria-label="View source"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" aria-label="View live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-number">02</span>
+                        <h3>Cross-Platform Healthcare Application</h3>
+                        <p>A mobile application designed to improve healthcare accessibility and communication
+                        between doctors and patients, with appointment management and modern mobile-first UX.</p>
+                        <ul class="project-features-compact">
+                            <li>Cross-platform mobile experience</li>
+                            <li>Appointment management</li>
+                            <li>Patient communication workflows</li>
+                            <li>Mobile-first architecture</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Mobile Dev</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="assets/images/projects/rda-website.svg" alt="Renaissance Digital Africa corporate website screenshot">
+                        <div class="project-card-overlay">
+                            <a href="#" aria-label="View source"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" aria-label="View live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-number">03</span>
+                        <h3>Renaissance Digital Africa Corporate Website</h3>
+                        <p>A modern, AI-focused corporate website for a technology consultancy, built with
+                        SEO-friendly semantics and smooth scroll-based animation.</p>
+                        <ul class="project-features-compact">
+                            <li>Responsive design</li>
+                            <li>Modern animations</li>
+                            <li>SEO optimization</li>
+                            <li>AI-inspired user experience</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">GSAP/AOS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="assets/images/projects/timbaron.svg" alt="Timbaron Holdings website screenshot">
+                        <div class="project-card-overlay">
+                            <a href="#" aria-label="View source"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" aria-label="View live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-number">04</span>
+                        <h3>Timbaron Holdings Website</h3>
+                        <p>A professional business website focused on strengthening digital presence and
+                        customer engagement for a holdings company.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience</span>
+                <h2>Professional <span class="text-gradient">Experience</span></h2>
+                <p class="section-subtitle">Real enterprise IT experience supporting critical government infrastructure.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>IT Support / Infrastructure</h3>
+                            <span class="timeline-org">Gauteng Department of Education (GDE)</span>
+                        </div>
+                        <p>
+                            Provided enterprise-level IT support and infrastructure assistance within a large-scale
+                            government department, managing desktop support, identity services, and cloud security
+                            for a wide user base across multiple sites.
+                        </p>
+                        <ul class="timeline-tags">
+                            <li><i class="fa-solid fa-users-gear"></i> Active Directory</li>
+                            <li><i class="fa-solid fa-cloud"></i> Microsoft 365</li>
+                            <li><i class="fa-solid fa-shield-halved"></i> Azure MFA</li>
+                            <li><i class="fa-solid fa-ticket"></i> Ticket Management</li>
+                            <li><i class="fa-solid fa-desktop"></i> Desktop Support</li>
+                            <li><i class="fa-solid fa-server"></i> Server &amp; Storage Environments</li>
+                            <li><i class="fa-solid fa-headset"></i> User Support</li>
+                            <li><i class="fa-solid fa-sitemap"></i> Enterprise Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING JOURNEY SECTION -->
+    <section id="learning" class="learning section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Learning Journey</span>
+                <h2>Currently <span class="text-gradient">Learning</span></h2>
+                <p class="section-subtitle">A growth mindset backed by a structured, ongoing learning roadmap.</p>
+            </div>
+
+            <div class="learning-grid">
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="learning-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Exploring AI fundamentals, prompt engineering, and applied AI in real-world software.</p>
+                    <div class="progress-bar"><span style="width:55%"></span></div>
+                    <span class="progress-label">55% &middot; Goal: Build an AI-powered feature into a live project</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="learning-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Machine Learning</h3>
+                    <p>Studying core ML concepts, model training and evaluation with Python.</p>
+                    <div class="progress-bar"><span style="width:40%"></span></div>
+                    <span class="progress-label">40% &middot; Goal: Ship a small predictive model end-to-end</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="learning-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>Cloud Computing</h3>
+                    <p>Deepening Azure knowledge and exploring cloud-native deployment patterns.</p>
+                    <div class="progress-bar"><span style="width:60%"></span></div>
+                    <span class="progress-label">60% &middot; Goal: Deploy a project fully on cloud infrastructure</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="learning-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <p>Learning security fundamentals to build safer, more resilient applications.</p>
+                    <div class="progress-bar"><span style="width:45%"></span></div>
+                    <span class="progress-label">45% &middot; Goal: Apply secure coding practices across projects</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="learning-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Next.js</h3>
+                    <p>Leveling up React skills with server-side rendering and modern routing.</p>
+                    <div class="progress-bar"><span style="width:50%"></span></div>
+                    <span class="progress-label">50% &middot; Goal: Rebuild a project using Next.js</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="learning-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>TypeScript</h3>
+                    <p>Strengthening type-safety and scalability in front-end and backend code.</p>
+                    <div class="progress-bar"><span style="width:65%"></span></div>
+                    <span class="progress-label">65% &middot; Goal: Use TypeScript across all new projects</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="learning-icon"><i class="fa-solid fa-sitemap"></i></div>
+                    <h3>System Design</h3>
+                    <p>Learning to design scalable, maintainable architectures for complex systems.</p>
+                    <div class="progress-bar"><span style="width:35%"></span></div>
+                    <span class="progress-label">35% &middot; Goal: Design and document a scalable system architecture</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="learning-icon"><i class="fa-solid fa-infinity"></i></div>
+                    <h3>DevOps</h3>
+                    <p>Exploring CI/CD pipelines, containerization, and automated deployment workflows.</p>
+                    <div class="progress-bar"><span style="width:30%"></span></div>
+                    <span class="progress-label">30% &middot; Goal: Set up a full CI/CD pipeline for a project</span>
+                </div>
+                <div class="learning-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="learning-icon"><i class="fa-solid fa-cubes"></i></div>
+                    <h3>Software Architecture</h3>
+                    <p>Studying design patterns and architectural principles for enterprise software.</p>
+                    <div class="progress-bar"><span style="width:40%"></span></div>
+                    <span class="progress-label">40% &middot; Goal: Apply clean architecture in a full-stack app</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GITHUB SECTION -->
+    <section id="github" class="github section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                <h2>Open Source <span class="text-gradient">Work</span></h2>
+                <p class="section-subtitle">Recent repositories and contributions that showcase my best engineering work.</p>
+            </div>
+
+            <div class="github-grid">
+                <article class="github-card" data-aos="fade-up" data-aos-delay="0">
+                    <h3>dhcp-ipams</h3>
+                    <p>Enterprise IP Address Management System built with React, Flask and WebSockets for live network telemetry.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-solid fa-code-branch"></i> React</span>
+                        <span><i class="fa-solid fa-flask"></i> Flask</span>
+                        <span><i class="fa-solid fa-database"></i> MySQL</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> View Repo</a>
+                    </div>
+                </article>
+                <article class="github-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>healthcare-mobile</h3>
+                    <p>Cross-platform React Native mobile app for managing telehealth appointments and user communication.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-brands fa-react"></i> React Native</span>
+                        <span><i class="fa-solid fa-mobile-screen-button"></i> Mobile UI</span>
+                        <span><i class="fa-solid fa-cloud"></i> API integration</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> View Repo</a>
+                    </div>
+                </article>
+                <article class="github-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>rda-marketing-site</h3>
+                    <p>Responsive corporate website focused on fast performance, accessibility and modern page transitions.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span><i class="fa-solid fa-rocket"></i> Optimized</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> View Repo</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-solid fa-certificate"></i> Certifications</span>
+                <h2>Professional <span class="text-gradient">Credentials</span></h2>
+                <p class="section-subtitle">Certifications and training that strengthen my technical foundation.</p>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+                    <span class="cert-icon"><i class="fa-solid fa-shield-check"></i></span>
+                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                    <p>Core cloud concepts, Azure services, security, privacy, compliance and support.</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="cert-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                    <h3>Python for Everybody</h3>
+                    <p>Comprehensive Python programming and data handling for back-end automation and scripting.</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="cert-icon"><i class="fa-solid fa-network-wired"></i></span>
+                    <h3>CCNA / Networking Fundamentals</h3>
+                    <p>Practical knowledge of networking essentials including IP addressing, routing, and network security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag"><i class="fa-solid fa-envelope"></i> Contact</span>
+                <h2>Let&rsquo;s <span class="text-gradient">Talk</span></h2>
+                <p class="section-subtitle">Ready to collaborate on your next project or discuss a role.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="0">
+                    <h3>Get in touch</h3>
+                    <p>I&rsquo;m available for freelance work, full-time roles, and project collaborations.</p>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> <a href="mailto:dunani.chauke@example.com">dunani.chauke@example.com</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener">linkedin.com/in/your-linkedin-username</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/your-github-username" target="_blank" rel="noopener">github.com/your-github-username</a></li>
+                        <li><strong>Location:</strong> Gauteng, South Africa</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project"></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-note">This form is a placeholder. Please send a direct email if you need immediate contact.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section">
+        <div class="container footer-container" data-aos="fade-up">
+            <p>© 2026 Dunani Ken Chauke. Built with modern web technologies and a passion for clean digital experiences.</p>
+            <div class="footer-links">
+                <a href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:dunani.chauke@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+    AOS.init({ duration: 900, once: true, disable: 'mobile' });
+</script>
+</body>
+</html>
